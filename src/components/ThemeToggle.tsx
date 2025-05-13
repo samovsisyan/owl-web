@@ -8,7 +8,6 @@ const ToggleButton = styled.button`
 
 const ThemeToggle = () => {
     const { theme, setTheme } = useTheme();
-
     return (
         <ToggleButton onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
             {theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode'}
